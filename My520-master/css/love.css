@@ -53,6 +53,13 @@ body {
     background-color: yellow;
 }
 
+.love .blockcopy {
+    right: 0;
+    position: absolute;
+    visibility: hidden; /*未开始升空动画前隐藏*/
+    background-color: yellow;
+}
+
 .love .block div {
     width: 40px;
     height: 40px;

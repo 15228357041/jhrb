@@ -125,11 +125,16 @@ function Rise() {
 
 }
 
+function Test(){
+    Next();
+    alert("测试");
+}
+
 window.onload = function () {
     setTimeout(() => {
 
         timer = setInterval(() => {
-            Next();
+            Test();
         }, 300);
 
 

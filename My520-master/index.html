@@ -4174,13 +4174,8 @@
         <div class="body_left">
             <img src="images/biubiubiu.gif" alt="" ondragstart='return false;'>
         </div>
-        <div class="body_center love">
-            <div class="block">
-                <div class="div1"></div>
-                <div class="div2"></div>
-                <div class="div3"></div>
-                <div class="div4"></div>
-            </div>
+        <div class="body_center love" id="user_test">
+<!--            <img src="images/biubiubiu.gif" alt="" ondragstart='return false;'>-->
         </div>
 
     </div>
@@ -4212,8 +4207,22 @@
         }
     }
 
+    function test(){
+        var img = document.createElement("img");
+        img.setAttribute('src','images/aixin1.gif');//给标签定义src链接
+        img.setAttribute('id','aixin');
+        document.getElementById('user_test').appendChild(img);//放到指定的id里
+
+    }
+    window.onload = function () {
+        setTimeout(() => {
+            test()
+        }, 12000);   //gif图播放完毕所需时间为11.73s
+
+    }
+
 </script>
-<script type="text/javascript" src="js/love.js"></script>
+<!--<script type="text/javascript" src="js/love.js"></script>-->
 
 </body>
 </html>
